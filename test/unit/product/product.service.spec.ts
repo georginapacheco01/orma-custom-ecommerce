@@ -1,7 +1,7 @@
 import {
   findProductById,
   getAllProducts,
-} from "../../../src/services/products.service";
+} from "../../../src/services/products.service.js";
 describe("Design Service", () => {
   it("should  get all products ", () => {
     const result = getAllProducts();

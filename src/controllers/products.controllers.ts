@@ -1,7 +1,10 @@
 import { Request, Response } from "express";
-import { findProductById, getAllProducts } from "../services/products.service";
-import { sendResponse } from "../utils/apiResponse";
-import { sendError } from "../utils/errorResponse";
+import {
+  findProductById,
+  getAllProducts,
+} from "../services/products.service.js";
+import { sendResponse } from "../utils/apiResponse.js";
+import { sendError } from "../utils/errorResponse.js";
 
 export const getProducts = (_req: Request, res: Response) => {
   try {

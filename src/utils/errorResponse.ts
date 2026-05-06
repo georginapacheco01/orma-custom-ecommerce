@@ -1,4 +1,4 @@
-import { ApiErrorParams } from "../types/ApiErrorParams";
+import { ApiErrorParams } from "../types/ApiErrorParams.js";
 
 export const sendError = <T>({
   res,

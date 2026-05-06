@@ -1,4 +1,4 @@
-import { ApiResponseParams } from "../types/ApiResponseParams";
+import { ApiResponseParams } from "../types/ApiResponseParams.js";
 
 export const sendResponse = <T>({
   res,

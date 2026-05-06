@@ -36,9 +36,6 @@
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
     "skipLibCheck": true
-  }, 
-  "include": [
-    "src",
-    "test"
-  ],
+  },
+  "include": ["src", "test"]
 }
