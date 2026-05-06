@@ -1,10 +1,10 @@
 import { Request, Response } from "express";
-import  {findProductById, getAllProducts} from "../services/products.service";
+import { findProductById, getAllProducts } from "../services/products.service";
 import { sendResponse } from "../utils/apiResponse";
 import { sendError } from "../utils/errorResponse";
 
 export const getProducts = (_req: Request, res: Response) => {
-  try{
+  try {
     const products = getAllProducts();
     return sendResponse({
       res,
@@ -12,7 +12,7 @@ export const getProducts = (_req: Request, res: Response) => {
       message: "Products retrieved successfully",
       data: products,
     });
-  }catch(error){
+  } catch (error) {
     return sendError({
       res,
       statusCode: 500,
@@ -22,10 +22,10 @@ export const getProducts = (_req: Request, res: Response) => {
   }
 };
 
-export const getProductById = (req: Request<{id:string}>, res: Response) => {
-  try{
+export const getProductById = (req: Request<{ id: string }>, res: Response) => {
+  try {
     const product = findProductById(req.params.id);
-    if(!product){
+    if (!product) {
       return sendError({
         res,
         statusCode: 500,
@@ -39,7 +39,7 @@ export const getProductById = (req: Request<{id:string}>, res: Response) => {
       message: "Product found successfully",
       data: product,
     });
-  }catch(error){
+  } catch (error) {
     return sendError({
       res,
       statusCode: 500,

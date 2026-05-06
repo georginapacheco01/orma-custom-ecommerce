@@ -10,6 +10,7 @@ Handles custom furniture designs, order processing, and simulated manufacturing 
 This API allows users to create furniture by defining parameters (dimensions, material, etc.) instead of selecting static products.
 
 The system:
+
 - parametric design data
 - stores configurations
 - generates simulated manufacturing files (STL)
@@ -82,7 +83,11 @@ backend/
 ├── tsconfig.json
 └── README.md
 ```
+
 ## Installation
+
 npm install
+
 ## Run project
+
 npm run dev
